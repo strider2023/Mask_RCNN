@@ -219,7 +219,7 @@ def train(dataset_train, dataset_val, model):
     print("Training network heads")
     model.train(dataset_train, dataset_val,
                 learning_rate=config.LEARNING_RATE,
-                epochs=30,
+                epochs=5,
                 layers='heads')
  
 def test(model, image_path = None, video_path=None, savedfile=None):
